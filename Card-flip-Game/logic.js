@@ -81,7 +81,6 @@ const callback = (arr)=>{
   }
 
   blocks = document.querySelectorAll(".block");
-  console.log(blocks);
   blocks.forEach((e) => {
     e.addEventListener("click", action);
   });
@@ -92,7 +91,6 @@ const callback = (arr)=>{
       if (this.classList.contains("alreadyClicked") === false) {
         this.classList.add("alreadyClicked");
         clickedBoxes.push(this);
-        console.log(clickedBoxes.length);
         this.innerHTML = arr[parseInt(this.id)];
       }
       if (clickedBoxes.length == 2) {
@@ -131,8 +129,6 @@ const callback = (arr)=>{
           clickedBoxes[1].classList.remove("alreadyClicked");
           clickedBoxes[0].style.transform = "rotateY(0deg)";
           clickedBoxes[1].style.transform = "rotateY(0deg)";
-
-          console.log(clickedBoxes[1]);
           clickedBoxes = [];
         }, 200);
       }
