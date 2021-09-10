@@ -65,8 +65,8 @@ const callback = (arr)=>{
   }
   function makeBlock(id) {
     let block = document.createElement("div");
-    block.style.width = "15vh";
-    block.style.height = "15vh";
+    block.style.width = "15vmin";
+    block.style.height = "15vmin";
     block.style.background = "linear-gradient(145deg, #ff7a7a, #e46767)";
     block.setAttribute("id", "" + id);
     block.className = "block";
